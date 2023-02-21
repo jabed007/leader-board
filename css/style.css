@@ -1,0 +1,21 @@
+/* Section top player and top blog */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-img {
+  width: 56px;
+  height: 56px;
+}
+
+.player-name {
+  font-weight: 500;
+  font-size: 18px;
+}
