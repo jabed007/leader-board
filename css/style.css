@@ -12,13 +12,16 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   background-color: #fff;
   width: 870px;
   /* margin: 0 auto; */
   padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 hr {
@@ -89,4 +92,74 @@ hr {
 
 .by {
   color: #9f9f9f;
+}
+
+/* Section Latest Course style */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}
+
+.course {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.course-img {
+  width: 224px;
+  height: 104px;
+  margin-bottom: 20px;
+}
+
+.course-title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.course-instructor {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ed6b4f;
+  margin-bottom: 20px;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa-star {
+  width: 12px;
+  height: 12px;
+  margin-right: 3px;
+}
+
+.fa-star.filled {
+  color: #ffc014;
+}
+
+.fa-star.empty {
+  color: #aeaeae;
+}
+.rating {
+  color: #a2a2a2;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.fa-clock {
+  margin-right: 6px;
+}
+
+.course-duration {
+  background-color: #ffe4e8;
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: #ff4a60;
+  font-size: 14px;
+  font-weight: 600;
 }
