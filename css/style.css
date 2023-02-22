@@ -1,7 +1,42 @@
-/* Section top player and top blog */
+/* common styles / utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: #fff;
+  width: 870px;
+  /* margin: 0 auto; */
+  padding: 30px;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+/* top players style*/
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
 .players {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
 }
 
 .player {
